@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeUni - Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7F9FC;
+            color: #000000;
+        }
+
+        header {
+            background-color: #00509E;
+            color: #FFFFFF;
+            padding: 1rem 2rem;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #F4D35E;
+        }
+
+        .resources-section {
+            padding: 2rem;
+        }
+
+        .resources-section h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: #000000;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-item {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            gap: 1rem;
+            background-color: #00509E;
+            color: #FFFFFF;
+            padding: 0;
+            padding-right: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            height: 220px; /* Adjusted height for better layout */
+        }
+
+        .resource-item img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px 0 0 5px;
+            object-fit: cover; /* Ensures the image keeps its aspect ratio */
+        }
+
+        .resource-item .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        .resource-item h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .resource-item p {
+            font-size: 1rem;
+            margin: 0;
+            flex: 1;
+            display: flex;
+
+        }
+
+        .resource-item .cta-button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: #F4D35E;
+            color: #00509E;
+            padding: 0.5rem 1rem;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .resource-item .cta-button:hover {
+            background-color: #EB5757;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FakeUni</div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="/programs.html">Programs</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="resources-section">
+        <h1>Resources</h1>
+        
+        <div class="resource-item">
+            <img src="./internship.png" alt="Internships">
+            <div class="content">
+                <h2>Internships</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu consectetur, placerat nulla ut, congue tellus. Nam magna tellus, porttitor molestie varius sit amet, vehicula sit amet risus. Proin ut tempor quam, sit amet lacinia velit. Nulla facilisi. Sed scelerisque, dui sed interdum pharetra, nibh ex porta odio, a blandit lorem ipsum eget libero. Cras dui lectus, sollicitudin quis pharetra vel, molestie nec risus. Mauris facilisis sapien vitae laoreet iaculis. Praesent id consectetur orci.</p>
+            </div>
+            <button class="cta-button">Discover More</button>
+        </div>
+
+        <div class="resource-item">
+            <img src="./Laboratory.jpg" alt="Laboratory Research">
+            <div class="content">
+                <h2>Laboratory Research</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu consectetur, placerat nulla ut, congue tellus. Nam magna tellus, porttitor molestie varius sit amet, vehicula sit amet risus. Proin ut tempor quam, sit amet lacinia velit. Nulla facilisi. Sed scelerisque, dui sed interdum pharetra, nibh ex porta odio, a blandit lorem ipsum eget libero. Cras dui lectus, sollicitudin quis pharetra vel, molestie nec risus. Mauris facilisis sapien vitae laoreet iaculis. Praesent id consectetur orci.</p>
+            </div>
+            <button class="cta-button">Discover More</button>
+        </div>
+    </section>
+</body>
+</html>

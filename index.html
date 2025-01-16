@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeUni - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7F9FC;
+            color: #000000;
+        }
+
+        header {
+            background-color: #00509E;
+        }
+
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #FFFFFF !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #FFFFFF !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F4D35E !important;
+        }
+
+        .hero {
+            background-image: url('./hero\ background.png');
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 15rem 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .cta-button {
+            background-color: #F4D35E;
+            color: #00509E;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #EB5757;
+            color: #FFFFFF;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            padding: 3rem 2rem;
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            background-image: url('https://via.placeholder.com/1920x800');
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+            position: relative;
+            text-align: center;
+        }
+
+        .image-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .image-section .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section {
+            background-color: #A6C0FE;
+            color: #000000;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-section .cta-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #00509E;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem 2rem;
+            font-size: 0.875rem;
+        }
+
+        footer a {
+            color: #F4D35E;
+            text-decoration: none;
+        }
+
+        .why-us,
+        .our-achievements {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 990px) {
+            .why-us,
+            .our-achievements {
+                grid-template-columns: 1fr;
+            }
+
+            .why-us img,
+            .our-achievements img {
+                margin: 0 auto;
+            }
+            .why-us > *, .our-achievements > *{
+                text-align: center;
+            }
+        }
+
+        .why-us img,
+        .our-achievements img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">FakeUni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./programs.html">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to FakeUni</h1>
+        <p>Your journey to excellence starts here. Explore our programs and resources to achieve your goals.</p>
+        <button class="cta-button">Explore Programs</button>
+    </section>
+
+    <section class="section light-background why-us">
+        <div>
+            <h2>Why Choose FakeUni?</h2>
+            <p>Our university offers a wide range of programs and a vibrant campus life that helps you grow academically and personally. With state-of-the-art facilities and a dedicated faculty, we ensure that our students are equipped with the skills and knowledge to succeed in their chosen fields.</p>
+        </div>
+        <img src="./campus_life.png" alt="Campus Life">
+    </section>
+
+    <section class="section image-section">
+        <div class="content">
+            <h2>Discover Our Campus</h2>
+            <p>Take a virtual tour and see what makes FakeUni a great place to learn and grow. From modern classrooms to serene outdoor spaces, our campus is designed to inspire and support every student. Experience the vibrant energy of our community and the resources that foster both academic and personal growth.</p>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <h2>Join Us Today</h2>
+        <p>Become part of a vibrant community dedicated to learning and innovation. At FakeUni, you’ll find opportunities to expand your horizons, connect with like-minded peers, and build a future filled with potential. Don’t wait—start your journey with us today!</p>
+        <button class="cta-button">Apply Now</button>
+    </section>
+
+    <section class="section light-background our-achievements">
+        <img src="./graduation.png" alt="Achievements">
+        <div>
+            <h2>Our Achievements</h2>
+            <p>We take pride in our alumni and faculty who have made significant contributions in various fields. From groundbreaking research to community service, our FakeUni family is making an impact worldwide. Join a legacy of excellence and innovation that spans generations.</p>
+        </div>
+    </section>
+
+    <section class="section image-section">
+        <div class="content">
+            <h2>Explore Our Programs</h2>
+            <p>From undergraduate to postgraduate studies, we have a program for everyone. Our comprehensive curriculum is designed to provide a blend of theoretical knowledge and practical experience, ensuring our students are career-ready.</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FakeUni. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
